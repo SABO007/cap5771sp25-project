@@ -12,11 +12,11 @@ EDA: Open 'Scripts/EDA.ipynb' and click again on run all cells to get the EDA wh
 2. Course suggestions based on career goals and skills needed for the student’s field of interest.
 
 ### Datasets:
-**Student Data** (`Studentdata.csv`): 
+1. **Student Data** (`Studentdata.csv`): 
   - Features: Branch, Percentage_12th, Skills, Career_Goal
-**Courses Data** (`Online_Courses.csv`): 
+2. **Courses Data** (`Online_Courses.csv`): 
   - Features: Title, Category, Course Type, Skills
-**Job Data** (`Job_Postings.csv`): 
+3. **Job Data** (`Job_Postings.csv`): 
   - Features: Job Posting Date, Job Title, Job Title Full, Job Skills, Job Location, Company Name
 
 ### **Tool and Technology Stack**
