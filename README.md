@@ -21,9 +21,13 @@ EDA: Open 'Scripts/EDA.ipynb' and click again on run all cells to get the EDA wh
 
 ### **Tool and Technology Stack**
 **Programming Languages**: Python, HTML, CSS, JavaScript, TypeScript
+
 **Libraries**: Pandas, Matplotlib, Seaborn for preprocessing and data analysis
+
 **Scikit-learn** for building classification models
+
 **Tool Type**: Classification models such as Support Vector Classifier, Decision Tree Classifier, and Random Forest Classifier (Ensemble)
+
 **Platform**: Visual Studio Code
 
 ### Team members
