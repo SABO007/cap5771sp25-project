@@ -20,15 +20,11 @@ EDA: Open 'Scripts/EDA.ipynb' and click again on run all cells to get the EDA wh
   - Features: Job Posting Date, Job Title, Job Title Full, Job Skills, Job Location, Company Name
 
 ### **Tool and Technology Stack**
-**Programming Languages**: Python, HTML, CSS, JavaScript, TypeScript
-
-**Libraries**: Pandas, Matplotlib, Seaborn for preprocessing and data analysis
-
-**Scikit-learn** for building classification models
-
-**Tool Type**: Classification models such as Support Vector Classifier, Decision Tree Classifier, and Random Forest Classifier (Ensemble)
-
-**Platform**: Visual Studio Code
+1. **Programming Languages**: Python, HTML, CSS, JavaScript, TypeScript
+2. **Libraries**: Pandas, Matplotlib, Seaborn for preprocessing and data analysis
+3. **Scikit-learn** for building classification models
+4. **Tool Type**: Classification models such as Support Vector Classifier, Decision Tree Classifier, and Random Forest Classifier (Ensemble)
+5. **Platform**: Visual Studio Code
 
 ### Team members
 1. Sashank Boppana, 4171-9973
