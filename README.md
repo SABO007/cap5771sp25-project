@@ -25,3 +25,7 @@ EDA: Open 'Scripts/EDA.ipynb' and click again on run all cells to get the EDA wh
 **Scikit-learn** for building classification models
 **Tool Type**: Classification models such as Support Vector Classifier, Decision Tree Classifier, and Random Forest Classifier (Ensemble)
 **Platform**: Visual Studio Code
+
+### Team members
+1. Sashank Boppana, 4171-9973
+2. Tejesh Boppana, 1234-0626
