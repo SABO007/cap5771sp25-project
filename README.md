@@ -40,6 +40,6 @@ The system integrates data from three sources:
 | Model Integration | Apr 18-21 |  
 | Final Testing & Submission | Apr 22-May 23 |  
 
-## **Contributor**  
+## **Contributors**  
 - **Sashank Boppana**  
 - **Tejesh Boppana**  
