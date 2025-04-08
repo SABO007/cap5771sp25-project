@@ -11,7 +11,7 @@ The **Student Job & Course Recommendation System** helps students explore **care
 
 ## **Technology Stack**  
 - **Backend** – Python, Flask  
-- **Frontend** – HTML, CSS, JavaScript  
+- **Frontend** – HTML, CSS, JavaScript, Streamlit
 - **Data Analysis** – Pandas, Scikit-learn, Matplotlib, Seaborn  
 - **ML Models** – Support Vector Classifier (SVC), Decision Tree, Random Forest  
 
@@ -29,7 +29,7 @@ The system integrates data from three sources:
 
 ## **Key Methodologies**  
 - **TF-IDF Vectorization** – Converts skills into numerical format for better matching.  
-- **Feature Engineering** – Constructs an **Academic Performance Score** to refine recommendations.  
+- **Feature Engineering** – Constructs new features like **Academic Performance Score**, **Performance Gap**, and **Skills count** to refine recommendations.  
 - **Categorical Encoding** – Transforms categorical data (e.g., course type, branch) for ML models.  
 
 ## **Project Roadmap**  
