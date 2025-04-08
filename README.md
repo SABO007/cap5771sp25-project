@@ -7,7 +7,7 @@ The **Student Job & Course Recommendation System** helps students explore **care
 - **Personalized Recommendations** – Matches students to jobs & courses based on their skills and other features.  
 - **Machine Learning-Powered Matching** – Uses **SVM, Decision Tree, and Random Forest** models for precise recommendations.  
 - **Data-Driven Insights** – Identifies trends in **hiring demands, skill gaps, and career trajectories**.  
-- **Web-Based Interface** – Provides an easy-to-use **Flask-powered** dashboard for student interaction.  
+- **Web-Based Interface** – Provides an website dashboard for student interaction.  
 
 ## **Technology Stack**  
 - **Backend** – Python, Flask  
