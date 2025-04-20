@@ -232,7 +232,6 @@ elif page == "Predictions":
                 
                 # Show prediction confidence
                 max_proba = np.max(prediction_proba) * 100
-                st.write(f"Confidence: {max_proba:.2f}%")
                 
                 # Predict matching jobs
                 st.subheader("Matching Job Opportunities")
