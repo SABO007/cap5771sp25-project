@@ -54,7 +54,7 @@ def load_models():
 @st.cache_data
 def load_data():
     try:
-        student_course_data = pd.read_csv('Data/final_student_course.csv')
+        student_course_data = pd.read_csv('Data/final_student_course_top_categories.csv')
         job_data = pd.read_csv('Data/final_job_data.csv')
         return student_course_data, job_data
     except FileNotFoundError:
@@ -80,7 +80,7 @@ if page == "Home":
     
     with col2:
         st.subheader("How it Works")
-        st.image("https://via.placeholder.com/400x250", caption="ML Recommendation System")
+        # st.image(caption="ML Recommendation System")
         st.write("""
         Our system uses:
         - Decision Tree classification for course category prediction
@@ -221,11 +221,14 @@ elif page == "Predictions":
                 input_pca = models['pca'].transform(input_df)
                 
                 # Make prediction
+                # Make prediction
                 prediction = models['model'].predict(input_pca)[0]
                 prediction_proba = models['model'].predict_proba(input_pca)[0]
+
                 
                 # Convert prediction to category name
                 category_name = models['label_encoders']['Category'].inverse_transform([prediction])[0]
+                print(f"Predicted Category: {category_name}")
                 
                 # Display result
                 st.success(f"Predicted Course Category: **{category_name}**")
