@@ -1,45 +1,121 @@
-# **Student Job & Course Recommendation System**  
+# 📚 Student Job & Course Recommendation System
 
-## **Overview**  
-The **Student Job & Course Recommendation System** helps students explore **career opportunities** and **skill-enhancing courses** tailored to their profiles. By analyzing a student’s **academic background, skills, and career aspirations**, the system suggests relevant **job postings** and **online courses** to improve their employability.  
+A data science project that helps students discover personalized online courses and job opportunities based on their academic background, skills, and career goals. This system uses machine learning models and a user-friendly Streamlit interface to make real-time predictions.
 
-## **Features**  
-- **Personalized Recommendations** – Matches students to jobs & courses based on their skills and other features.  
-- **Machine Learning-Powered Matching** – Uses **SVM, Decision Tree, and Random Forest** models for precise recommendations.  
-- **Data-Driven Insights** – Identifies trends in **hiring demands, skill gaps, and career trajectories**.  
-- **Web-Based Interface** – Provides an website dashboard for student interaction.  
+---
 
-## **Technology Stack**  
-- **Backend** – Python, Flask  
-- **Frontend** – HTML, CSS, JavaScript, Streamlit
-- **Data Analysis** – Pandas, Scikit-learn, Matplotlib, Seaborn  
-- **ML Models** – Support Vector Classifier (SVC), Decision Tree, Random Forest  
+## 🚀 Project Overview
 
-## **Datasets Used**  
-The system integrates data from three sources:  
-1. **Student Data (`Studentdata.csv`)** – Academic performance, skills, and career goals.  
-2. **Course Data (`Online_Courses.csv`)** – Course titles, categories, and required skills.  
-3. **Job Data (`Job_Postings.csv`)** – Job titles, required skills, locations, and companies.  
+Students often struggle to identify the right career path or relevant learning resources. Our system bridges that gap using:
 
-## **Insights from Exploratory Data Analysis (EDA)**  
-- **Top Career Aspirations:** ML Engineer, Web Developer, Data Scientist.  
-- **Most Sought-After Skills:** Python, SQL, Machine Learning, Data Analysis.  
-- **High-Demand Job Locations:** California, New York, Chicago, Texas.  
-- **Industry Trends:** Companies like **Toptal, Jobot, and Perficient** are frequent recruiters.  
+- Student profile analysis (academic data + skillset)
+- Machine learning for course category prediction
+- Cosine similarity for job-role matching
+- Real-time recommendations via an interactive dashboard
 
-## **Key Methodologies**  
-- **TF-IDF Vectorization** – Converts skills into numerical format for better matching.  
-- **Feature Engineering** – Constructs new features like **Academic Performance Score**, **Performance Gap**, and **Skills count** to refine recommendations.  
-- **Categorical Encoding** – Transforms categorical data (e.g., course type, branch) for ML models.  
+---
 
-## **Project Roadmap**  
-| Phase | Timeline |  
-| --- | --- |  
-| Model Optimization | Apr 6-11 |  
-| Web Development | Apr 12-17 |  
-| Model Integration | Apr 18-21 |  
-| Final Testing & Submission | Apr 22-May 23 |  
+## 🛠️ Tech Stack
 
-## **Contributors**  
-- **Sashank Boppana**  
-- **Tejesh Boppana**  
+**Languages & Libraries**
+- Python
+- Pandas, NumPy
+- Scikit-learn (ML models & evaluation)
+- Matplotlib, Seaborn (visualization)
+- Streamlit (dashboard)
+
+**Tools**
+- Visual Studio Code
+- Joblib (model serialization)
+
+---
+
+## 📊 Datasets Used
+
+All datasets are sourced from public Kaggle repositories:
+
+1. **Online Courses Dataset**  
+   https://www.kaggle.com/datasets/khaledatef1/online-courses
+
+2. **Job Postings Dataset**  
+   https://www.kaggle.com/datasets/filibertozurita/job-postings
+
+3. **Student Skillset Dataset**  
+   https://www.kaggle.com/datasets/kushagrathisside/student-skillset-analysis
+
+---
+
+## 💡 Key Features
+
+- **TF-IDF + PCA** for transforming and compressing resume data
+- **Label Encoding** for categorical variables like branch and course type
+- **Decision Tree Classifier** for course prediction
+- **Cosine Similarity** to recommend relevant jobs
+- **SHAP** for interpreting model predictions
+- **Streamlit App** with tabs for:
+  - Home
+  - Predictions
+  - Data Analysis
+  - About
+
+---
+
+## 🖥️ How to Run Locally
+
+1. Clone the repository:
+   git clone https://github.com/SABO007/cap5771sp25-project.git
+
+2. Make sure the following folders exist:
+```bash
+├── Data/
+│   └── final_student_course_top_categories.csv
+│   └── final_job_data.csv
+│
+├── Models/
+│   ├── best_model.pkl
+│   ├── job_tfidf_matrix.pkl
+│   ├── job_tfidf_vectorizer.pkl
+│   ├── job_titles.pkl
+│   ├── label_encoders.pkl
+│   ├── pca_vectorizer.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── Report/
+│   ├── MILESTONE1.pdf
+│   └── MILESTONE2.pdf
+│
+├── Scripts/
+│   ├── Data_merging.ipynb
+│   ├── EDA.ipynb
+│   ├── model_evaluation.ipynb
+│   ├── Modelling.ipynb
+│   └── Preprocess.ipynb
+│
+├── app.py
+└── README.md
+
+```
+
+3. Launch the app:
+```bash
+   streamlit run app.py
+```
+
+---
+
+## 👥 Team Contributions
+
+- **Sashank Boppana**: Data processing, model training, evaluation, SHAP interpretation  
+- **Tejesh Boppana**: Streamlit UI development, dashboard integration with backend, frontend interaction
+
+---
+
+## 📌 License
+
+This project is developed for academic purposes. Refer to individual datasets on Kaggle for their specific licenses.
+
+---
+
+## 🙌 Acknowledgements
+
+Thanks to Kaggle for providing accessible datasets and to the open-source community for tools like Streamlit and Scikit-learn.
