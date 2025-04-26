@@ -99,7 +99,9 @@ All datasets are sourced from public Kaggle repositories:
 │   └── Preprocess.ipynb       # Data Preprocessing
 │
 ├── app.py                     # Streamlit Dashboard file
+├── LICENSE
 └── README.md
+
 
 ```
 
