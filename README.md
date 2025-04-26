@@ -60,6 +60,12 @@ All datasets are sourced from public Kaggle repositories:
 
 ---
 
+##  🎥 Platform Demo Video
+
+- **Link to the Video: https://drive.google.com/file/d/12zQ7RBTS3DZrD9i1JlJw7-Flm1RrflIz/view?usp=sharing**
+
+---
+
 ## 🖥️ How to Run Locally
 
 1. Clone the repository:
@@ -68,8 +74,7 @@ All datasets are sourced from public Kaggle repositories:
 2. Make sure the following folders exist:
 ```bash
 ├── Data/
-│   └── final_student_course_top_categories.csv
-│   └── final_job_data.csv
+│   └── All the generated datasets
 │
 ├── Models/
 │   ├── best_model.pkl
@@ -83,15 +88,16 @@ All datasets are sourced from public Kaggle repositories:
 ├── Report/
 │   ├── MILESTONE1.pdf
 │   └── MILESTONE2.pdf
+│   └── Final Report.pdf
 │
 ├── Scripts/
-│   ├── Data_merging.ipynb
-│   ├── EDA.ipynb
-│   ├── model_evaluation.ipynb
-│   ├── Modelling.ipynb
-│   └── Preprocess.ipynb
+│   ├── Data_merging.ipynb     # Merging the datsets
+│   ├── EDA.ipynb              # Exploratory data analysis
+│   ├── model_evaluation.ipynb # Post model evaluation Feature importance and SHAP
+│   ├── Modelling.ipynb        # Feature Engineering, Evaluation, Model Training 
+│   └── Preprocess.ipynb       # Data Preprocessing
 │
-├── app.py
+├── app.py                     # Streamlit Dashboard file
 └── README.md
 
 ```
